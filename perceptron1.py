@@ -10,7 +10,10 @@ neuron_correct = 0
 #x1 = Color (0 if orange, 1 if red)
 #x2 = Weight
 #x3 = Diameter
+def debug(print_data):
+    print("[DEBUGGER] "+print_data)
 def generate_data():
+    debug("Range of weights for an apple 120-130, for orange <120, diameter for apple 10> for orange 10< and color")
     global w1,w2,w3, dataset
     w1 = random.random()
     w2 = random.random()
